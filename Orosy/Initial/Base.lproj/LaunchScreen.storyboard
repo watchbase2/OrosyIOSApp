@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="009-lZ-SAv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G5-O5-0ad">
+                                <rect key="frame" x="0.0" y="44" width="414" height="659"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartUpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-bj-lPQ">
+                                        <rect key="frame" x="62" y="200" width="290" height="79"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="290" id="6Gz-on-tVJ"/>
+                                            <constraint firstAttribute="width" secondItem="6Je-bj-lPQ" secondAttribute="height" multiplier="290:79" id="paF-cM-VE6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmg-Dx-SLI">
+                                        <rect key="frame" x="20" y="324" width="374" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="OrosyGray600"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tmg-Dx-SLI" secondAttribute="trailing" constant="20" id="GCF-y3-PXW"/>
+                                    <constraint firstItem="6Je-bj-lPQ" firstAttribute="top" secondItem="9G5-O5-0ad" secondAttribute="top" constant="200" id="sYs-QA-U4y"/>
+                                    <constraint firstItem="tmg-Dx-SLI" firstAttribute="leading" secondItem="9G5-O5-0ad" secondAttribute="leading" constant="20" id="ud5-cW-4he"/>
+                                    <constraint firstItem="tmg-Dx-SLI" firstAttribute="top" secondItem="6Je-bj-lPQ" secondAttribute="bottom" constant="45" id="vde-iW-rhn"/>
+                                    <constraint firstItem="6Je-bj-lPQ" firstAttribute="centerX" secondItem="9G5-O5-0ad" secondAttribute="centerX" id="zzL-6M-Yq3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9G5-O5-0ad" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8wX-bd-tZ8"/>
+                            <constraint firstItem="009-lZ-SAv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JRE-em-n1S"/>
+                            <constraint firstAttribute="trailing" secondItem="9G5-O5-0ad" secondAttribute="trailing" id="RNo-XI-DNn"/>
+                            <constraint firstItem="009-lZ-SAv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cse-TP-dsX"/>
+                            <constraint firstItem="9G5-O5-0ad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="djy-c3-73d"/>
+                            <constraint firstItem="009-lZ-SAv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kxs-5R-BWe"/>
+                            <constraint firstItem="009-lZ-SAv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lW6-0D-JDd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9G5-O5-0ad" secondAttribute="bottom" constant="159" id="p6R-UJ-ONJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="375" height="667"/>
+        <image name="StartUpLogo" width="580" height="158"/>
+        <namedColor name="OrosyGray600">
+            <color red="0.093999996781349182" green="0.15299999713897705" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

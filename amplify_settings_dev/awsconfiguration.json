@@ -1,0 +1,69 @@
+{
+  "UserAgent": "aws-amplify/cli",
+  "Version": "0.1.0",
+  "IdentityManager": {
+    "Default": {}
+  },
+  "AppSync": {
+    "Default": {
+      "ApiUrl": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+      "Region": "ap-northeast-1",
+      "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+      "ClientDatabasePrefix": "orosy-backend-api_AMAZON_COGNITO_USER_POOLS"
+    },
+    "orosy-backend-api_API_KEY": {
+      "ApiUrl": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+      "Region": "ap-northeast-1",
+      "AuthMode": "API_KEY",
+      "ApiKey": "da2-6irp2trzuzg35n5ffkznluoks4",
+      "ClientDatabasePrefix": "orosy-backend-api_API_KEY"
+    },
+    "orosy-backend-api_AWS_IAM": {
+      "ApiUrl": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+      "Region": "ap-northeast-1",
+      "AuthMode": "AWS_IAM",
+      "ClientDatabasePrefix": "orosy-backend-api_AWS_IAM"
+    },
+    "orosy-backend-api_AMAZON_COGNITO_USER_POOLS": {
+      "ApiUrl": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+      "Region": "ap-northeast-1",
+      "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+      "ClientDatabasePrefix": "orosy-backend-api_AMAZON_COGNITO_USER_POOLS"
+    },
+    "orosy-user-log-collector_API_KEY": {
+      "ApiUrl": "https://r6yvbrzbt5cxnh26hebqd63e2e.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+      "Region": "ap-northeast-1",
+      "AuthMode": "API_KEY",
+      "ClientDatabasePrefix": "orosy-user-log-collector_API_KEY"
+    }
+  },
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "ap-northeast-1:708835ae-f354-45f6-9819-a25d259028ab",
+        "Region": "ap-northeast-1"
+      }
+    }
+  },
+  "CognitoUserPool": {
+    "Default": {
+      "PoolId": "ap-northeast-1_FROjRFgdk",
+      "AppClientId": "9rbfmrrh9ffq3d8jobb4shtua",
+      "AppClientSecret": "1j6irqa03tmesql7dre3445cuqpm3jc8756ghj4lmr3er3293sue",
+      "Region": "ap-northeast-1"
+    }
+  },
+  "Auth": {
+    "Default": {
+      "OAuth": {
+        "WebDomain": "orosysignup-develop.auth.ap-northeast-1.amazoncognito.com",
+        "AppClientId": "9rbfmrrh9ffq3d8jobb4shtua",
+        "AppClientSecret": "1j6irqa03tmesql7dre3445cuqpm3jc8756ghj4lmr3er3293sue",
+        "SignInRedirectURI": "orosy-retailer-ios-app://",
+        "SignOutRedirectURI": "orosy-retailer-ios-app://",
+        "Scopes": ["openid"]
+      },
+      "authenticationFlowType": "USER_SRP_AUTH"
+    }
+  }
+}

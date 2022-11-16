@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Order ConfirmationVC-->
+        <scene sceneID="qp5-3a-tnW">
+            <objects>
+                <viewController storyboardIdentifier="OrderConfirmationVC" id="tmT-zN-x3K" customClass="OrderConfirmationVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usn-YF-oBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="216" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bXE-BS-5tu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                                <color key="backgroundColor" name="OrosyBackground"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PayShipCell" rowHeight="216" id="Gel-eG-jGG" userLabel="PayShipCell">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gel-eG-jGG" id="Doc-Qu-bLs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Maa-1T-KK9" userLabel="BaseView" customClass="CustomUIView" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="335" height="186"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お届け先" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82q-gq-dle" customClass="OrosyLabel16B" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="20" width="100" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="UKq-ZA-uNh"/>
+                                                                <constraint firstAttribute="height" constant="22" id="fho-IZ-rLg"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpC-WG-OPd" userLabel="配送先名" customClass="OrosyLabel16" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="46" width="295" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="saF-Ij-Yhi"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEP-IN-OoD" userLabel="配送先住所" customClass="OrosyLabel14" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="77" width="295" height="0.0"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caU-vr-7Qc" userLabel="line">
+                                                            <rect key="frame" x="0.0" y="95" width="335" height="1"/>
+                                                            <color key="backgroundColor" name="OrosyGray300"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="343" id="MRz-5u-1uz"/>
+                                                                <constraint firstAttribute="height" constant="1" id="o9R-IY-pqn"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お支払い方法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgH-Kn-mN3" customClass="OrosyLabel16B" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="116" width="100" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="ISm-dj-m9c"/>
+                                                                <constraint firstAttribute="height" constant="21" id="rZo-ty-hZN"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-b7-M52" userLabel="支払い方法" customClass="OrosyLabel16" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="147" width="295" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="9Fl-qN-haz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="PpC-WG-OPd" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" constant="20" id="3Uy-Vx-KVt"/>
+                                                        <constraint firstItem="BEP-IN-OoD" firstAttribute="top" secondItem="PpC-WG-OPd" secondAttribute="bottom" constant="10" id="ACg-hu-rfN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BEP-IN-OoD" secondAttribute="trailing" constant="20" id="FAE-yG-0wY"/>
+                                                        <constraint firstItem="mj2-b7-M52" firstAttribute="top" secondItem="dgH-Kn-mN3" secondAttribute="bottom" constant="10" id="FiG-cc-b3j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="caU-vr-7Qc" secondAttribute="trailing" id="I2X-xQ-EJy"/>
+                                                        <constraint firstItem="caU-vr-7Qc" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" id="McV-VC-eyl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mj2-b7-M52" secondAttribute="bottom" constant="18" id="SWS-3G-xM0"/>
+                                                        <constraint firstItem="caU-vr-7Qc" firstAttribute="top" secondItem="BEP-IN-OoD" secondAttribute="bottom" constant="18" id="axu-Kg-a07"/>
+                                                        <constraint firstItem="mj2-b7-M52" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" constant="20" symbolic="YES" id="bHo-LG-UAT"/>
+                                                        <constraint firstItem="82q-gq-dle" firstAttribute="top" secondItem="Maa-1T-KK9" secondAttribute="top" constant="20" id="buD-8L-4wN"/>
+                                                        <constraint firstItem="dgH-Kn-mN3" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" constant="20" id="geJ-AV-n7P"/>
+                                                        <constraint firstItem="PpC-WG-OPd" firstAttribute="top" secondItem="82q-gq-dle" secondAttribute="bottom" constant="10" id="jdF-kF-ytW"/>
+                                                        <constraint firstItem="82q-gq-dle" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" constant="20" id="mBk-Nh-jSb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PpC-WG-OPd" secondAttribute="trailing" constant="20" id="pgE-Ec-ns6"/>
+                                                        <constraint firstItem="dgH-Kn-mN3" firstAttribute="top" secondItem="caU-vr-7Qc" secondAttribute="bottom" constant="20" id="tEj-6q-gvf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mj2-b7-M52" secondAttribute="trailing" constant="20" symbolic="YES" id="wkp-rp-Q2W"/>
+                                                        <constraint firstItem="BEP-IN-OoD" firstAttribute="leading" secondItem="Maa-1T-KK9" secondAttribute="leading" constant="20" id="zUi-Xh-eEf"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Maa-1T-KK9" secondAttribute="bottom" constant="10" id="3Nb-w6-x9M"/>
+                                                <constraint firstAttribute="trailing" secondItem="Maa-1T-KK9" secondAttribute="trailing" constant="20" id="fAv-KW-MgM"/>
+                                                <constraint firstItem="Maa-1T-KK9" firstAttribute="top" secondItem="Doc-Qu-bLs" secondAttribute="top" constant="20" id="vcW-1b-BVK"/>
+                                                <constraint firstItem="Maa-1T-KK9" firstAttribute="leading" secondItem="Doc-Qu-bLs" secondAttribute="leading" constant="20" id="zKg-Ba-3Gp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="OrosyBackground"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartListCell" rowHeight="76" id="yYr-DV-yQF" userLabel="CartListCell">
+                                        <rect key="frame" x="0.0" y="266" width="375" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yYr-DV-yQF" id="z3u-nV-Isf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-e1-0by" userLabel="BaseView" customClass="CustomUIView" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="16"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入ブランド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDo-YX-63b" customClass="OrosyLabel16B" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="20" width="295" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="dF9-dF-GXv"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" tag="100" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ajh-dG-Xom" userLabel="Stack View1">
+                                                            <rect key="frame" x="20" y="50.5" width="295" height="0.0"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3b-WY-Yok" userLabel="Line1">
+                                                            <rect key="frame" x="0.0" y="44" width="335" height="1"/>
+                                                            <color key="backgroundColor" name="OrosyGray400"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="cYb-0d-xas"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" tag="101" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KA6-06-DZx" userLabel="Stack View2">
+                                                            <rect key="frame" x="20" y="36" width="295" height="0.0"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-L8-Aup" userLabel="Line2">
+                                                            <rect key="frame" x="0.0" y="53" width="335" height="1"/>
+                                                            <color key="backgroundColor" name="OrosyGray400"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="acp-Wb-JTi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" tag="102" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2fK-If-Us6" userLabel="Stack View3">
+                                                            <rect key="frame" x="20" y="6" width="295" height="0.0"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qDo-YX-63b" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" constant="20" id="2TO-ly-N2O"/>
+                                                        <constraint firstItem="Shf-L8-Aup" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" id="HUK-Uq-XLw"/>
+                                                        <constraint firstItem="2fK-If-Us6" firstAttribute="top" secondItem="Shf-L8-Aup" secondAttribute="bottom" constant="18" id="IsN-lW-Gwt"/>
+                                                        <constraint firstItem="2fK-If-Us6" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" constant="20" id="M0v-Ag-mEH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Shf-L8-Aup" secondAttribute="trailing" id="MBc-WV-Om4"/>
+                                                        <constraint firstItem="ajh-dG-Xom" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" constant="20" id="SCZ-iL-Joj"/>
+                                                        <constraint firstItem="qDo-YX-63b" firstAttribute="top" secondItem="88Y-e1-0by" secondAttribute="top" constant="20" id="Vpn-lb-O3Z"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2fK-If-Us6" secondAttribute="bottom" constant="10" id="b8E-q3-p5c"/>
+                                                        <constraint firstItem="KA6-06-DZx" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" constant="20" id="dIZ-si-FqX"/>
+                                                        <constraint firstItem="ajh-dG-Xom" firstAttribute="top" secondItem="qDo-YX-63b" secondAttribute="bottom" constant="10" id="dfi-Aq-iC9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="c3b-WY-Yok" secondAttribute="trailing" id="f11-fj-FBs"/>
+                                                        <constraint firstItem="Shf-L8-Aup" firstAttribute="top" secondItem="KA6-06-DZx" secondAttribute="bottom" constant="15" id="fW3-Nu-aH6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qDo-YX-63b" secondAttribute="trailing" constant="20" id="gWl-R1-d6F"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KA6-06-DZx" secondAttribute="trailing" constant="20" id="pm6-V4-CGN"/>
+                                                        <constraint firstItem="c3b-WY-Yok" firstAttribute="leading" secondItem="88Y-e1-0by" secondAttribute="leading" id="q13-mJ-S5R"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2fK-If-Us6" secondAttribute="trailing" constant="20" id="sl2-Op-Pgy"/>
+                                                        <constraint firstItem="c3b-WY-Yok" firstAttribute="top" secondItem="ajh-dG-Xom" secondAttribute="bottom" constant="10" id="vww-0Y-pR9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ajh-dG-Xom" secondAttribute="trailing" constant="20" id="ynA-DT-VYS"/>
+                                                        <constraint firstItem="KA6-06-DZx" firstAttribute="top" secondItem="c3b-WY-Yok" secondAttribute="bottom" constant="15" id="z9B-LF-Twd"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ney-dP-C2j" userLabel="FooterView">
+                                                    <rect key="frame" x="20" y="36" width="335" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入ブランドの全商品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drc-cy-Hty" customClass="OrosyLabel16B" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="16" width="335" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="pk2-H5-tFo"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="drc-cy-Hty" secondAttribute="bottom" id="5Mr-Rs-aUE"/>
+                                                        <constraint firstAttribute="height" constant="40" id="DK5-6j-qD5"/>
+                                                        <constraint firstItem="drc-cy-Hty" firstAttribute="leading" secondItem="ney-dP-C2j" secondAttribute="leading" id="g1O-iP-wLW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="drc-cy-Hty" secondAttribute="trailing" id="xpS-7p-9RU"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ney-dP-C2j" firstAttribute="leading" secondItem="z3u-nV-Isf" secondAttribute="leading" constant="20" id="2yU-8W-9Ru"/>
+                                                <constraint firstItem="88Y-e1-0by" firstAttribute="leading" secondItem="z3u-nV-Isf" secondAttribute="leading" constant="20" id="9bh-eU-gTY"/>
+                                                <constraint firstItem="88Y-e1-0by" firstAttribute="top" secondItem="z3u-nV-Isf" secondAttribute="top" id="Nkc-vF-cdj"/>
+                                                <constraint firstAttribute="bottom" secondItem="ney-dP-C2j" secondAttribute="bottom" id="bRj-Lm-7tB"/>
+                                                <constraint firstItem="ney-dP-C2j" firstAttribute="top" secondItem="88Y-e1-0by" secondAttribute="bottom" constant="20" id="f2j-F2-llm"/>
+                                                <constraint firstAttribute="trailing" secondItem="ney-dP-C2j" secondAttribute="trailing" constant="20" id="g3C-we-s7p"/>
+                                                <constraint firstAttribute="trailing" secondItem="88Y-e1-0by" secondAttribute="trailing" constant="20" id="iiG-4w-G9k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="OrosyBackground"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tmT-zN-x3K" id="5fq-dJ-nOu"/>
+                                    <outlet property="delegate" destination="tmT-zN-x3K" id="WyZ-Cq-gNq"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igN-yh-1ur" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B3-Wd-lab" customClass="OrosyButtonGradient" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="15" width="335" height="40"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="注文を確定する"/>
+                                        <connections>
+                                            <action selector="doPayment" destination="tmT-zN-x3K" eventType="touchUpInside" id="b4b-wG-JC6"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="i4E-Zw-5eI">
+                                        <rect key="frame" x="169" y="16.5" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" name="OrosyGray100"/>
+                                <constraints>
+                                    <constraint firstItem="7B3-Wd-lab" firstAttribute="leading" secondItem="igN-yh-1ur" secondAttribute="leading" constant="20" id="7mD-2c-Yam"/>
+                                    <constraint firstAttribute="trailing" secondItem="7B3-Wd-lab" secondAttribute="trailing" constant="20" id="99a-cE-Kst"/>
+                                    <constraint firstAttribute="height" constant="70" id="ISu-8R-7u2"/>
+                                    <constraint firstItem="7B3-Wd-lab" firstAttribute="top" secondItem="igN-yh-1ur" secondAttribute="top" constant="15" id="Va3-Q6-7nM"/>
+                                    <constraint firstAttribute="bottom" secondItem="7B3-Wd-lab" secondAttribute="bottom" constant="15" id="aWo-mw-NxU"/>
+                                    <constraint firstItem="i4E-Zw-5eI" firstAttribute="centerY" secondItem="7B3-Wd-lab" secondAttribute="centerY" id="dvM-43-piO"/>
+                                    <constraint firstItem="i4E-Zw-5eI" firstAttribute="centerX" secondItem="7B3-Wd-lab" secondAttribute="centerX" id="vC3-hb-akT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zgf-SM-07d"/>
+                        <color key="backgroundColor" name="OrosyBackground"/>
+                        <constraints>
+                            <constraint firstItem="bXE-BS-5tu" firstAttribute="leading" secondItem="zgf-SM-07d" secondAttribute="leading" id="8DA-bO-wwL"/>
+                            <constraint firstItem="igN-yh-1ur" firstAttribute="leading" secondItem="usn-YF-oBr" secondAttribute="leadingMargin" constant="-16" id="Eac-Ho-582"/>
+                            <constraint firstItem="zgf-SM-07d" firstAttribute="bottom" secondItem="igN-yh-1ur" secondAttribute="bottom" id="dG6-v6-i5I"/>
+                            <constraint firstItem="bXE-BS-5tu" firstAttribute="top" secondItem="zgf-SM-07d" secondAttribute="top" id="eB8-zh-rQ7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="igN-yh-1ur" secondAttribute="trailing" constant="-16" id="hMb-ir-qBN"/>
+                            <constraint firstItem="igN-yh-1ur" firstAttribute="top" secondItem="bXE-BS-5tu" secondAttribute="bottom" id="jqf-m1-1dG"/>
+                            <constraint firstItem="bXE-BS-5tu" firstAttribute="trailing" secondItem="zgf-SM-07d" secondAttribute="trailing" id="l9H-bI-Gli"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainTableView" destination="bXE-BS-5tu" id="NfG-gb-R88"/>
+                        <outlet property="orderExecButton" destination="7B3-Wd-lab" id="nIP-5z-u3C"/>
+                        <outlet property="orderWaitIndicatior" destination="i4E-Zw-5eI" id="FcX-H2-tTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzh-Hb-OJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4080.8000000000002" y="1010.6446776611695"/>
+        </scene>
+        <!--DeliverySelectVC-->
+        <scene sceneID="gUR-N7-4qy">
+            <objects>
+                <viewController storyboardIdentifier="DeliverySelectVC" title="Storyboard Video Feed" id="lxp-s0-Ijz" userLabel="DeliverySelectVC" customClass="DeliverySelectVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OTo-5X-pOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bg6-s5-MAK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                                <color key="backgroundColor" name="OrosyBackground"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DelieryPlaceAddCell" id="8RU-wE-bIY">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8RU-wE-bIY" id="KtL-wY-uOf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7b-Nh-47C" userLabel="BaseView">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="80"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ey-SW-Zvg" customClass="OrosyButton" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="20" width="295" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="u8W-e2-RpO"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="配送先を追加"/>
+                                                            <connections>
+                                                                <action selector="showAddDeliveryPlace" destination="lxp-s0-Ijz" eventType="touchUpInside" id="3ZL-gd-qZF"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="0Ey-SW-Zvg" firstAttribute="top" secondItem="r7b-Nh-47C" secondAttribute="top" constant="20" id="3D6-3z-6Bp"/>
+                                                        <constraint firstItem="0Ey-SW-Zvg" firstAttribute="leading" secondItem="r7b-Nh-47C" secondAttribute="leading" constant="20" id="Jue-6R-fvL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0Ey-SW-Zvg" secondAttribute="bottom" constant="20" id="mHK-F1-FFn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0Ey-SW-Zvg" secondAttribute="trailing" constant="20" id="nQO-X6-ukH"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="r7b-Nh-47C" secondAttribute="trailing" constant="20" id="6cd-1n-WKQ"/>
+                                                <constraint firstItem="r7b-Nh-47C" firstAttribute="top" secondItem="KtL-wY-uOf" secondAttribute="top" id="F3W-aV-UKp"/>
+                                                <constraint firstItem="r7b-Nh-47C" firstAttribute="leading" secondItem="KtL-wY-uOf" secondAttribute="leading" constant="20" id="QYI-47-6Ou"/>
+                                                <constraint firstAttribute="bottom" secondItem="r7b-Nh-47C" secondAttribute="bottom" id="dJC-Bf-Urc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="150" id="YJm-kx-rrt">
+                                        <rect key="frame" x="0.0" y="135.5" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YJm-kx-rrt" id="hhv-oW-a78">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeO-ZC-xHH" userLabel="BaseView">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="140"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-Kr-4WG" userLabel="TitleView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                            <subviews>
+                                                                <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DU-fj-dwu" userLabel="Check Button">
+                                                                    <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="6i3-Qd-A5X"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="UQy-7N-JYa"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" image="radio-button-unchecked"/>
+                                                                    <state key="selected" image="radio-button-checked"/>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-zV-nKL" userLabel="店名" customClass="OrosyLabel16" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="50" y="14" width="265" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="UC7-p2-wNg"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" name="OrosyGray600"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-zT-squ">
+                                                                    <rect key="frame" x="0.0" y="58" width="335" height="1"/>
+                                                                    <color key="backgroundColor" name="OrosyBackground"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="nTX-Zq-x0M"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="XLe-zV-nKL" firstAttribute="top" secondItem="Nwf-Kr-4WG" secondAttribute="top" constant="14" id="2DR-rP-qaX"/>
+                                                                <constraint firstAttribute="trailing" secondItem="XLe-zV-nKL" secondAttribute="trailing" constant="20" id="Cfk-Ka-nEe"/>
+                                                                <constraint firstAttribute="height" constant="60" id="I83-td-6GM"/>
+                                                                <constraint firstItem="hsF-zT-squ" firstAttribute="leading" secondItem="Nwf-Kr-4WG" secondAttribute="leading" id="NVh-vI-yW7"/>
+                                                                <constraint firstAttribute="bottom" secondItem="2DU-fj-dwu" secondAttribute="bottom" constant="20" id="Y6q-cO-vIX"/>
+                                                                <constraint firstItem="2DU-fj-dwu" firstAttribute="top" secondItem="Nwf-Kr-4WG" secondAttribute="top" constant="20" id="d6R-W5-htN"/>
+                                                                <constraint firstAttribute="bottom" secondItem="hsF-zT-squ" secondAttribute="bottom" constant="1" id="eDs-YW-TgI"/>
+                                                                <constraint firstItem="XLe-zV-nKL" firstAttribute="leading" secondItem="2DU-fj-dwu" secondAttribute="trailing" constant="10" id="eWf-bZ-Sb0"/>
+                                                                <constraint firstAttribute="trailing" secondItem="hsF-zT-squ" secondAttribute="trailing" id="ll7-90-Wgh"/>
+                                                                <constraint firstItem="2DU-fj-dwu" firstAttribute="leading" secondItem="Nwf-Kr-4WG" secondAttribute="leading" constant="20" id="oF4-gc-ZkP"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI0-u0-0bs" userLabel="住所" customClass="OrosyLabel14" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="78" width="295" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="GST-Jh-Bje"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="MI0-u0-0bs" secondAttribute="bottom" constant="18" id="3Ol-Bt-O3z"/>
+                                                        <constraint firstItem="MI0-u0-0bs" firstAttribute="leading" secondItem="AeO-ZC-xHH" secondAttribute="leading" constant="20" id="3kB-Of-k1N"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Nwf-Kr-4WG" secondAttribute="trailing" id="H2X-9q-4G7"/>
+                                                        <constraint firstItem="Nwf-Kr-4WG" firstAttribute="leading" secondItem="AeO-ZC-xHH" secondAttribute="leading" id="MF7-a5-npd"/>
+                                                        <constraint firstItem="Nwf-Kr-4WG" firstAttribute="top" secondItem="AeO-ZC-xHH" secondAttribute="top" id="ce6-oC-t9e"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Nwf-Kr-4WG" secondAttribute="trailing" id="ene-bL-zx1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MI0-u0-0bs" secondAttribute="trailing" constant="20" id="pJM-jV-3nH"/>
+                                                        <constraint firstItem="MI0-u0-0bs" firstAttribute="top" secondItem="Nwf-Kr-4WG" secondAttribute="bottom" constant="18" id="yNe-Ca-WhA"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="AeO-ZC-xHH" firstAttribute="leading" secondItem="hhv-oW-a78" secondAttribute="leading" constant="20" id="135-UH-iav"/>
+                                                <constraint firstItem="AeO-ZC-xHH" firstAttribute="top" secondItem="hhv-oW-a78" secondAttribute="top" id="L7a-sm-VjZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="AeO-ZC-xHH" secondAttribute="bottom" constant="10" id="oJ7-GD-ppG"/>
+                                                <constraint firstAttribute="trailing" secondItem="AeO-ZC-xHH" secondAttribute="trailing" constant="20" id="uLY-vw-jJL"/>
+                                                <constraint firstAttribute="trailing" secondItem="AeO-ZC-xHH" secondAttribute="trailing" constant="20" id="wC1-0G-V62"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentCellWG" rowHeight="250" id="bDg-Do-C7n" userLabel="PaymentCellNP">
+                                        <rect key="frame" x="0.0" y="285.5" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bDg-Do-C7n" id="Is7-MC-PSZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3we-Vk-5vu" userLabel="Base View">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="240"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T1-Pc-kul" userLabel="ボタンView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7g-4i-8Eg" userLabel="Line">
+                                                                    <rect key="frame" x="0.0" y="58" width="335" height="1"/>
+                                                                    <color key="backgroundColor" name="OrosyBackground"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="n89-Pb-vBb"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbd-Yl-iol" userLabel="Check Button">
+                                                                    <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="0PF-fi-uAs"/>
+                                                                        <constraint firstAttribute="width" constant="20" id="FO2-ZA-nj3"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" image="radio-button-unchecked"/>
+                                                                    <state key="selected" image="radio-button-checked"/>
+                                                                </button>
+                                                                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKC-Zj-7ZU" userLabel="Help Button" customClass="IndexedButton" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="301" y="19" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="4hh-Ad-qlC"/>
+                                                                        <constraint firstAttribute="width" constant="20" id="D62-Pj-l78"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" image="question"/>
+                                                                    <connections>
+                                                                        <action selector="helpForDeferedPayment:" destination="lxp-s0-Ijz" eventType="touchUpInside" id="Dnw-xx-zk2"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-qg-Sdg" userLabel="支払い方法" customClass="OrosyLabel16" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="55" y="21" width="232" height="25"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <color key="textColor" name="OrosyGray600"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="o7g-4i-8Eg" firstAttribute="leading" secondItem="1T1-Pc-kul" secondAttribute="leading" id="0dP-vM-dhe"/>
+                                                                <constraint firstItem="iKC-Zj-7ZU" firstAttribute="leading" secondItem="F6P-qg-Sdg" secondAttribute="trailing" constant="14" id="3K1-cm-Jtj"/>
+                                                                <constraint firstAttribute="trailing" secondItem="iKC-Zj-7ZU" secondAttribute="trailing" constant="14" id="3zo-hz-qbG"/>
+                                                                <constraint firstItem="F6P-qg-Sdg" firstAttribute="leading" secondItem="Zbd-Yl-iol" secondAttribute="trailing" constant="15" id="4o8-Fk-cIp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="o7g-4i-8Eg" secondAttribute="trailing" id="9ZF-J7-Abi"/>
+                                                                <constraint firstAttribute="height" constant="60" id="AZy-0g-wYE"/>
+                                                                <constraint firstItem="iKC-Zj-7ZU" firstAttribute="top" secondItem="1T1-Pc-kul" secondAttribute="top" constant="19" id="W1H-vu-YHy"/>
+                                                                <constraint firstItem="Zbd-Yl-iol" firstAttribute="leading" secondItem="1T1-Pc-kul" secondAttribute="leading" constant="20" id="dEB-ye-dLe"/>
+                                                                <constraint firstItem="F6P-qg-Sdg" firstAttribute="top" secondItem="1T1-Pc-kul" secondAttribute="top" constant="21" id="fwk-u6-t0p"/>
+                                                                <constraint firstAttribute="bottom" secondItem="o7g-4i-8Eg" secondAttribute="bottom" constant="1" id="tLe-mu-KtE"/>
+                                                                <constraint firstItem="Zbd-Yl-iol" firstAttribute="top" secondItem="1T1-Pc-kul" secondAttribute="top" constant="20" id="wOa-Q8-sTX"/>
+                                                                <constraint firstItem="o7g-4i-8Eg" firstAttribute="top" secondItem="F6P-qg-Sdg" secondAttribute="bottom" constant="12" id="xue-V6-l1b"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gL-VO-IkZ" userLabel="NotAvailableLabel">
+                                                            <rect key="frame" x="20" y="80" width="295" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view tag="11" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MuF-ta-oXI" userLabel="NPimageView">
+                                                            <rect key="frame" x="20" y="120" width="295" height="56"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55u-va-x2z" userLabel="NP画像" customClass="OrosyUIImageView" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="10" width="295" height="46"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="46" id="giE-eJ-Ajq"/>
+                                                                        <constraint firstAttribute="width" secondItem="55u-va-x2z" secondAttribute="height" multiplier="295:46" id="t1z-eQ-E1N"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="55u-va-x2z" secondAttribute="bottom" id="5Ce-h6-1tR"/>
+                                                                <constraint firstItem="55u-va-x2z" firstAttribute="centerX" secondItem="MuF-ta-oXI" secondAttribute="centerX" id="b3l-uL-pfV"/>
+                                                                <constraint firstItem="55u-va-x2z" firstAttribute="top" secondItem="MuF-ta-oXI" secondAttribute="top" constant="10" id="w5O-s5-dud"/>
+                                                                <constraint firstAttribute="height" constant="56" id="wAk-JK-EJg"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QcR-gb-U40" userLabel="Bottom View">
+                                                            <rect key="frame" x="0.0" y="176" width="335" height="64"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="Ald-az-rRN" userLabel="銀行アイコン" customClass="OrosyUIImageView100" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="20" y="14" width="16" height="16"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="AWJ-3v-JS6"/>
+                                                                        <constraint firstAttribute="width" constant="16" id="mwM-63-8Es"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="s0z-X6-tdm"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="銀行振込" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POv-6W-E9R" customClass="OrosyLabel14B" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="51" y="15" width="60" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="FNc-DN-t0o"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="RzP-lo-brP"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" name="OrosyGray600"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24" translatesAutoresizingMaskIntoConstraints="NO" id="hSm-uZ-pTK" userLabel="コンビニアイコン" customClass="OrosyUIImageView100" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="131" y="14" width="16" height="16"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="78o-Ij-Ku0"/>
+                                                                        <constraint firstAttribute="width" constant="16" id="TUs-S5-Fna"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="onw-NN-m8A"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コンビニ支払い" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHB-Ky-a5N" customClass="OrosyLabel14B" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="162" y="15" width="100" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="08O-fz-005"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="AdC-re-bgo"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" name="OrosyGray600"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWw-zT-2ZN" userLabel="説明" customClass="OrosyLabel12" customModule="Orosy" customModuleProvider="target">
+                                                                    <rect key="frame" x="20" y="44" width="295" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" name="OrosyGray600"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="MHB-Ky-a5N" firstAttribute="leading" secondItem="hSm-uZ-pTK" secondAttribute="trailing" constant="15" id="E2Z-WN-EGR"/>
+                                                                <constraint firstItem="hSm-uZ-pTK" firstAttribute="leading" secondItem="POv-6W-E9R" secondAttribute="trailing" constant="20" id="FDU-Zw-17r"/>
+                                                                <constraint firstItem="Ald-az-rRN" firstAttribute="leading" secondItem="QcR-gb-U40" secondAttribute="leading" constant="20" id="Jq5-kH-cmA"/>
+                                                                <constraint firstAttribute="bottom" secondItem="rWw-zT-2ZN" secondAttribute="bottom" constant="20" id="NSN-X9-jVH"/>
+                                                                <constraint firstItem="POv-6W-E9R" firstAttribute="leading" secondItem="Ald-az-rRN" secondAttribute="trailing" constant="15" id="YfI-DL-VqH"/>
+                                                                <constraint firstItem="hSm-uZ-pTK" firstAttribute="top" secondItem="QcR-gb-U40" secondAttribute="top" constant="14" id="bFi-Cs-Wq0"/>
+                                                                <constraint firstItem="MHB-Ky-a5N" firstAttribute="top" secondItem="QcR-gb-U40" secondAttribute="top" constant="15" id="fZP-ti-p3i"/>
+                                                                <constraint firstItem="rWw-zT-2ZN" firstAttribute="leading" secondItem="QcR-gb-U40" secondAttribute="leading" constant="20" id="gcp-FQ-Y62"/>
+                                                                <constraint firstAttribute="trailing" secondItem="rWw-zT-2ZN" secondAttribute="trailing" constant="20" id="qea-mD-NZ2"/>
+                                                                <constraint firstItem="Ald-az-rRN" firstAttribute="top" secondItem="QcR-gb-U40" secondAttribute="top" constant="14" id="sKl-ZY-hp1"/>
+                                                                <constraint firstItem="rWw-zT-2ZN" firstAttribute="top" secondItem="POv-6W-E9R" secondAttribute="bottom" constant="8" id="vkr-7L-Oqg"/>
+                                                                <constraint firstItem="POv-6W-E9R" firstAttribute="top" secondItem="QcR-gb-U40" secondAttribute="top" constant="15" id="wvl-hT-TEa"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="OrosyS50"/>
+                                                    <constraints>
+                                                        <constraint firstItem="QcR-gb-U40" firstAttribute="top" secondItem="MuF-ta-oXI" secondAttribute="bottom" id="99Z-6b-KtL"/>
+                                                        <constraint firstItem="1T1-Pc-kul" firstAttribute="leading" secondItem="3we-Vk-5vu" secondAttribute="leading" id="CKD-Bl-0xr"/>
+                                                        <constraint firstItem="2gL-VO-IkZ" firstAttribute="top" secondItem="1T1-Pc-kul" secondAttribute="bottom" id="NVV-Ry-DlX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="QcR-gb-U40" secondAttribute="bottom" id="SSB-zn-XiZ"/>
+                                                        <constraint firstItem="2gL-VO-IkZ" firstAttribute="leading" secondItem="3we-Vk-5vu" secondAttribute="leading" constant="20" id="UQx-kX-v5t"/>
+                                                        <constraint firstItem="QcR-gb-U40" firstAttribute="leading" secondItem="3we-Vk-5vu" secondAttribute="leading" id="aIs-hE-hx8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1T1-Pc-kul" secondAttribute="trailing" id="hSp-85-8Yb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="QcR-gb-U40" secondAttribute="trailing" id="lI0-Y6-icf"/>
+                                                        <constraint firstItem="MuF-ta-oXI" firstAttribute="leading" secondItem="3we-Vk-5vu" secondAttribute="leading" constant="20" id="msF-n4-334"/>
+                                                        <constraint firstItem="1T1-Pc-kul" firstAttribute="top" secondItem="3we-Vk-5vu" secondAttribute="top" id="ncb-AE-eF6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2gL-VO-IkZ" secondAttribute="trailing" constant="20" id="q0q-uV-TZj"/>
+                                                        <constraint firstItem="MuF-ta-oXI" firstAttribute="top" secondItem="2gL-VO-IkZ" secondAttribute="bottom" id="rfC-Wb-EWX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MuF-ta-oXI" secondAttribute="trailing" constant="20" id="yeA-5G-Atm"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="3we-Vk-5vu" firstAttribute="top" secondItem="Is7-MC-PSZ" secondAttribute="top" id="352-Gb-1lH"/>
+                                                <constraint firstAttribute="bottom" secondItem="3we-Vk-5vu" secondAttribute="bottom" constant="10" id="3t9-hi-nuv"/>
+                                                <constraint firstAttribute="trailing" secondItem="3we-Vk-5vu" secondAttribute="trailing" constant="20" id="RKB-ci-XYN"/>
+                                                <constraint firstItem="3we-Vk-5vu" firstAttribute="leading" secondItem="Is7-MC-PSZ" secondAttribute="leading" constant="20" id="XeM-Zj-8WI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentCell" rowHeight="288" id="GHB-yX-NiE" userLabel="PaymentCell">
+                                        <rect key="frame" x="0.0" y="535.5" width="375" height="288"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GHB-yX-NiE" id="gtt-pZ-7cn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuL-De-Jyi" userLabel="Base View">
+                                                    <rect key="frame" x="20" y="0.0" width="335" height="288"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RUf-UG-DDU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="288"/>
+                                                            <subviews>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXL-QF-6zq" userLabel="ボタンView">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PpS-ho-ffr" userLabel="Line">
+                                                                            <rect key="frame" x="0.0" y="58" width="335" height="1"/>
+                                                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="1" id="NPd-cu-KyI"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeE-Nq-bfz" userLabel="Check Button">
+                                                                            <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="20" id="Ngo-ud-Bvc"/>
+                                                                                <constraint firstAttribute="width" constant="20" id="cDG-fL-LgM"/>
+                                                                            </constraints>
+                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            <state key="normal" image="radio-button-unchecked"/>
+                                                                            <state key="selected" image="radio-button-checked"/>
+                                                                        </button>
+                                                                        <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kq-pN-IDc" userLabel="Help Button" customClass="IndexedButton" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="301" y="19" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="20" id="bhg-sT-rwf"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="giY-WC-Lx1"/>
+                                                                            </constraints>
+                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            <state key="normal" image="question"/>
+                                                                            <connections>
+                                                                                <action selector="helpFor90DaysPayment:" destination="lxp-s0-Ijz" eventType="touchUpInside" id="bAf-dW-thk"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-iC-kIf" userLabel="支払い方法" customClass="OrosyLabel16" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="55" y="21" width="232" height="25"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <color key="textColor" name="OrosyGray600"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="7Kq-pN-IDc" firstAttribute="leading" secondItem="J5U-iC-kIf" secondAttribute="trailing" constant="14" id="53l-6n-xDx"/>
+                                                                        <constraint firstItem="J5U-iC-kIf" firstAttribute="leading" secondItem="OeE-Nq-bfz" secondAttribute="trailing" constant="15" id="A87-y3-4oH"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="PpS-ho-ffr" secondAttribute="trailing" id="HVt-AM-CPS"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="PpS-ho-ffr" secondAttribute="bottom" constant="1" id="MP4-6B-s5E"/>
+                                                                        <constraint firstItem="J5U-iC-kIf" firstAttribute="top" secondItem="XXL-QF-6zq" secondAttribute="top" constant="21" id="PZI-bs-zgB"/>
+                                                                        <constraint firstItem="OeE-Nq-bfz" firstAttribute="top" secondItem="XXL-QF-6zq" secondAttribute="top" constant="20" id="SvP-dv-tyJ"/>
+                                                                        <constraint firstAttribute="height" constant="60" id="VAz-Qh-KHV"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="7Kq-pN-IDc" secondAttribute="trailing" constant="14" id="bnY-T4-cdc"/>
+                                                                        <constraint firstItem="7Kq-pN-IDc" firstAttribute="top" secondItem="XXL-QF-6zq" secondAttribute="top" constant="19" id="gw0-1V-aho"/>
+                                                                        <constraint firstItem="OeE-Nq-bfz" firstAttribute="leading" secondItem="XXL-QF-6zq" secondAttribute="leading" constant="20" id="llY-78-x5j"/>
+                                                                        <constraint firstItem="PpS-ho-ffr" firstAttribute="leading" secondItem="XXL-QF-6zq" secondAttribute="leading" id="w8M-os-hVw"/>
+                                                                        <constraint firstItem="PpS-ho-ffr" firstAttribute="top" secondItem="J5U-iC-kIf" secondAttribute="bottom" constant="12" id="z0f-rw-3Eh"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMY-oW-6c2" userLabel="Bottom View">
+                                                                    <rect key="frame" x="0.0" y="60" width="335" height="117"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-aS-gru" userLabel="銀行アイコン" customClass="OrosyUIImageView100" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="14" width="16" height="16"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="P9f-5P-sAU"/>
+                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="TkT-IP-vat"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="do1-JO-Lbf"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="ue7-j4-8mE"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="銀行振込" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-MW-I4L" customClass="OrosyLabel14B" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="51" y="14" width="60" height="21"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="21" id="7lT-os-COO"/>
+                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="OIc-1J-yxk"/>
+                                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ZZN-qc-BNx"/>
+                                                                                <constraint firstAttribute="width" constant="60" id="fJZ-Y2-vuY"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" name="OrosyGray600"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-0I-t41" userLabel="コンビニアイコン" customClass="OrosyUIImageView100" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="131" y="14" width="16" height="16"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="167-uc-jJH"/>
+                                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="TUh-MH-rIp"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="UGX-Qs-9Mh"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="zDW-gZ-xsL"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クレジットカード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAp-mH-kSw" customClass="OrosyLabel14B" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="162" y="14" width="134" height="21"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="21" id="Osl-Pm-lRb"/>
+                                                                                <constraint firstAttribute="width" constant="134" id="ybs-hg-5bl"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" name="OrosyGray600"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-ts-HJK" userLabel="説明" customClass="OrosyLabel12" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="43" width="295" height="54"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" name="OrosyGray600"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="ZpW-MW-I4L" firstAttribute="leading" secondItem="njZ-aS-gru" secondAttribute="trailing" constant="15" id="6HB-eg-tJL"/>
+                                                                        <constraint firstItem="ZpW-MW-I4L" firstAttribute="top" secondItem="LMY-oW-6c2" secondAttribute="top" constant="14" id="77H-HE-bXG"/>
+                                                                        <constraint firstItem="njZ-aS-gru" firstAttribute="leading" secondItem="LMY-oW-6c2" secondAttribute="leading" constant="20" id="FOi-oF-eaY"/>
+                                                                        <constraint firstItem="hAp-mH-kSw" firstAttribute="top" secondItem="LMY-oW-6c2" secondAttribute="top" constant="14" id="FZ4-12-S7u"/>
+                                                                        <constraint firstItem="hAp-mH-kSw" firstAttribute="leading" secondItem="QD9-0I-t41" secondAttribute="trailing" constant="15" id="M5A-DV-A7w"/>
+                                                                        <constraint firstItem="JNe-ts-HJK" firstAttribute="top" secondItem="ZpW-MW-I4L" secondAttribute="bottom" constant="8" id="Uuq-Zk-TN7"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="JNe-ts-HJK" secondAttribute="bottom" constant="20" id="gN5-gX-xpi"/>
+                                                                        <constraint firstItem="njZ-aS-gru" firstAttribute="top" secondItem="LMY-oW-6c2" secondAttribute="top" constant="14" id="iYZ-OJ-xfV"/>
+                                                                        <constraint firstItem="JNe-ts-HJK" firstAttribute="leading" secondItem="LMY-oW-6c2" secondAttribute="leading" constant="20" id="lag-R2-ow8"/>
+                                                                        <constraint firstItem="QD9-0I-t41" firstAttribute="leading" secondItem="ZpW-MW-I4L" secondAttribute="trailing" constant="20" id="r3z-cW-Ghh"/>
+                                                                        <constraint firstItem="QD9-0I-t41" firstAttribute="top" secondItem="LMY-oW-6c2" secondAttribute="top" constant="14" id="ulT-st-RwE"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="JNe-ts-HJK" secondAttribute="trailing" constant="20" id="xNt-1M-hia"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzO-fq-OJe" userLabel="Login Message View">
+                                                                    <rect key="frame" x="0.0" y="177" width="335" height="111"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZh-6u-wer" userLabel="Login Label" customClass="OrosyLabel14B" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="10" width="295" height="31"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31" id="tll-jq-PgX"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGg-GD-Rbh" userLabel="Login Button" customClass="OrosyButtonWhite" customModule="Orosy" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="51" width="295" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="STa-IP-fEe"/>
+                                                                            </constraints>
+                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            <state key="normal">
+                                                                                <attributedString key="attributedTitle"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="showAddCreditCardView" destination="lxp-s0-Ijz" eventType="touchUpInside" id="ZKL-I1-N3x"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="BGg-GD-Rbh" firstAttribute="top" secondItem="SZh-6u-wer" secondAttribute="bottom" constant="10" id="71H-11-kVV"/>
+                                                                        <constraint firstItem="SZh-6u-wer" firstAttribute="top" secondItem="uzO-fq-OJe" secondAttribute="top" priority="999" constant="10" id="7ui-GJ-VRA"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="BGg-GD-Rbh" secondAttribute="trailing" constant="20" id="KxO-gQ-Yad"/>
+                                                                        <constraint firstItem="SZh-6u-wer" firstAttribute="leading" secondItem="uzO-fq-OJe" secondAttribute="leading" constant="20" id="auM-vF-dAb"/>
+                                                                        <constraint firstItem="BGg-GD-Rbh" firstAttribute="leading" secondItem="uzO-fq-OJe" secondAttribute="leading" constant="20" id="mZD-TZ-GDJ"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="SZh-6u-wer" secondAttribute="trailing" constant="20" id="nfq-Vm-unX"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="BGg-GD-Rbh" secondAttribute="bottom" priority="999" constant="20" id="oIy-Lb-ZHd"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="OrosyS50"/>
+                                                    <constraints>
+                                                        <constraint firstItem="RUf-UG-DDU" firstAttribute="top" secondItem="UuL-De-Jyi" secondAttribute="top" id="CXZ-uz-d4P"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RUf-UG-DDU" secondAttribute="trailing" id="FBE-Gu-q2b"/>
+                                                        <constraint firstItem="RUf-UG-DDU" firstAttribute="leading" secondItem="UuL-De-Jyi" secondAttribute="leading" id="aka-Gr-fVv"/>
+                                                        <constraint firstAttribute="bottom" secondItem="RUf-UG-DDU" secondAttribute="bottom" id="btW-O6-bmQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="OrosyBackground"/>
+                                            <constraints>
+                                                <constraint firstItem="UuL-De-Jyi" firstAttribute="top" secondItem="gtt-pZ-7cn" secondAttribute="top" id="ZAY-ic-ary"/>
+                                                <constraint firstAttribute="bottom" secondItem="UuL-De-Jyi" secondAttribute="bottom" id="b0m-uT-ask"/>
+                                                <constraint firstAttribute="trailing" secondItem="UuL-De-Jyi" secondAttribute="trailing" constant="20" id="fb6-yi-JLb"/>
+                                                <constraint firstItem="UuL-De-Jyi" firstAttribute="leading" secondItem="gtt-pZ-7cn" secondAttribute="leading" constant="20" id="xpF-BQ-doC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lxp-s0-Ijz" id="Zq7-mf-ocA"/>
+                                    <outlet property="delegate" destination="lxp-s0-Ijz" id="cXW-go-Tun"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-EE-EZC" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-Hu-mbk" customClass="OrosyButton" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="15" width="335" height="40"/>
+                                        <color key="backgroundColor" name="OrosyBlue"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="確認画面へ進む">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gotoOrderComfirmationVC" destination="lxp-s0-Ijz" eventType="touchUpInside" id="Q0f-nb-7x9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="OrosyGray100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="83V-WM-zGh"/>
+                                    <constraint firstAttribute="trailing" secondItem="d2f-Hu-mbk" secondAttribute="trailing" constant="20" id="S4I-OO-WAA"/>
+                                    <constraint firstItem="d2f-Hu-mbk" firstAttribute="leading" secondItem="4q5-EE-EZC" secondAttribute="leading" constant="20" id="U1G-6P-Fci"/>
+                                    <constraint firstItem="d2f-Hu-mbk" firstAttribute="top" secondItem="4q5-EE-EZC" secondAttribute="top" constant="15" id="gsG-gL-MH3"/>
+                                    <constraint firstAttribute="bottom" secondItem="d2f-Hu-mbk" secondAttribute="bottom" constant="15" id="tMo-e7-EOA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EDr-67-HQp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4q5-EE-EZC" firstAttribute="leading" secondItem="EDr-67-HQp" secondAttribute="leading" id="7Gm-5K-pWn"/>
+                            <constraint firstItem="Bg6-s5-MAK" firstAttribute="trailing" secondItem="EDr-67-HQp" secondAttribute="trailing" id="BFj-OG-gEt"/>
+                            <constraint firstItem="4q5-EE-EZC" firstAttribute="top" secondItem="Bg6-s5-MAK" secondAttribute="bottom" id="E9V-NM-Ghg"/>
+                            <constraint firstItem="Bg6-s5-MAK" firstAttribute="top" secondItem="EDr-67-HQp" secondAttribute="top" id="Gg4-UA-kgL"/>
+                            <constraint firstItem="Bg6-s5-MAK" firstAttribute="leading" secondItem="EDr-67-HQp" secondAttribute="leading" id="cZH-NP-LOy"/>
+                            <constraint firstItem="4q5-EE-EZC" firstAttribute="bottom" secondItem="EDr-67-HQp" secondAttribute="bottom" id="qPh-jF-Hl7"/>
+                            <constraint firstItem="EDr-67-HQp" firstAttribute="trailing" secondItem="4q5-EE-EZC" secondAttribute="trailing" id="udD-ML-OES"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WdP-Nu-HvY"/>
+                    <connections>
+                        <outlet property="MainTableView" destination="Bg6-s5-MAK" id="iIG-mS-Z2k"/>
+                        <outlet property="confirmButton" destination="d2f-Hu-mbk" id="ZF8-bo-13M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44F-kp-WlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="1010.6446776611695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="24" width="20" height="20"/>
+        <image name="Card" width="20" height="20"/>
+        <image name="bank" width="20" height="20"/>
+        <image name="question" width="20" height="20"/>
+        <image name="radio-button-checked" width="21" height="21"/>
+        <image name="radio-button-unchecked" width="20" height="20"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyBackground">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyBlue">
+            <color red="0.0" green="0.14900000393390656" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray100">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray300">
+            <color red="0.87800002098083496" green="0.88599997758865356" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray400">
+            <color red="0.58399999141693115" green="0.62400001287460327" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray600">
+            <color red="0.093999996781349182" green="0.15299999713897705" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyS50">
+            <color red="0.93699997663497925" green="0.94900000095367432" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

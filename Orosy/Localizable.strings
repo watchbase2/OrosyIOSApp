@@ -1,0 +1,109 @@
+/* 
+  Messages.strings
+  Orosy
+
+  Created by HIdeji Kitamura on 2022/02/06.
+  
+*/
+
+// Signup
+"SignupSubTitle" = "アカウントを作成すると、卸価格を閲覧できます。";
+"EmailSentOut" = "メールを送信しました";
+"EmailSentOutExplanation" = "ご入力頂いたメールアドレスに\n確認メールを送信しました。\nメールから登録手続きを実施してください。";
+"EmailNotification" = "再送してもメールが届かない場合は、\nアドレスが間違っている可能性があります。\n再度アカウントを作成してください。";
+"AlreadyVerified" = "こちらのアドレスはすでに認証済です";
+"AlreadyVerifiedExplanation" = "ログインして利用を開始できます。\nログイン後、プロフィールの登録と身元確認を\n実施してください。";
+"UrlExpired" = "URLの有効期限が切れています";
+"UrlExpiredExplanation" = "お手数ですが\n再度アカウントの作成を行ってください。";
+"EmailVerified" = "メール認証が完了";
+"EmailVerifiedExplanation" = "厳選された卸仕入れサービス『orosy（オロシー）』へご登録頂きありがとうございます。";
+"SinupError" = "このメールアドレスは利用できません";
+"WaitApprove" = "審査完了までお待ち下さい";
+"WaitApproveExplanation" = "orosyはブランドとバイヤーが直接つながる\n出会いの機会を創出、品質を担保するため、\n貴社がorosyに適しているか審査させていただいております。\n\n審査結果は3営業日以内にメールにて\nご連絡致します。";
+"ApproveTitle" = "審査制でサービスを提供しております、審査情報のご入力をお願いいたします。";
+"ReSentEmail" = "確認メールが届かない場合は再送してください。";
+
+"ConnectionMessage" = "閲覧承認後に表示";
+"ProductRemoved" = "この商品は削除されました";
+"SendMessage" = "メッセージを送る";
+"ShowHolesalePrice" = "卸価格を閲覧";
+
+"BrandDoesNotExist" = "該当するブランドはありません";
+"ProductDoesNotExist" = "該当する商品はありません";
+"DataDoesNotExist" = "データがありません";
+"ShippingAndPayment" = "配送先と支払方法";
+"Shipped" = "商品が発送されました";
+"Canceled" = "この注文はキャンセルされました";
+"WaitShipping" = "商品の発送を待っています";
+"NPPending" = "掛払いの審査中です";
+"OrderError" = "エラーが発生しました、再度注文を行って下さい";
+"ReceiptNotReady" = "領収書は現在このアプリでは発行できません。Webブラウザからご利用ください";
+"NotEnoughInventory" = "これ以上在庫がありません。";
+"NotEnoughQuantity" = "最小ロット以下にはできません";
+"CallSupplier" = "ブランドへご連絡ください。";
+"CardDebitError" = "デビットカードはご利用になれません";
+"CardOtherError" = "入力された上限金額がカード会社から却下され、カードが停止されました。審査を再開するにはカード会社へご連絡ください。";
+"CardUnexpectedError" = "想定外のエラーが発生しました。";
+
+"OutOfStock" = "在庫切れです";
+"AddToCart" = "カートへ追加";
+"WaitApproveNP" = "与信枠の審査完了までお待ち下さい。";
+"WaitApproveNPMessage" = "審査は1〜最大5日かかる場合があります。\n今しばらくお待ちください。";
+"StripeNotAuthorized" = "ご利用には申込（30秒で完了）が必要です。";
+"LoginToApply" = "ログインして申し込む";      // 決済
+"PaymentNotSelected" = "支払い方法が選択されていません";
+"NoSearchProduct" = "ブランド・商品がありません\n検索条件を変更して再度お試しください";
+"NoSearchBrand" = "ブランド・商品がありません\n検索条件を変更して再度お試しください";
+"ImageMessage" = "画像が届いています";
+
+"ShareThisProduct" = "この商品をシェアする";
+"ShareThisBlog" = "このブログの記事をシェアする";
+"ShareThisBrand" = "このブランドをシェアする";
+
+// 空の場合に表示するメッセージ
+"NoFavoriteProduct" = "お気に入り商品がありません";
+"NoFavoriteBrand" = "取引ブランドがありません";
+"NoCart" = "カートには何も入っていません";
+"NoThread" = "まだメッセージはありません";
+"NoMessage" = "まだメッセージはありません";
+"NoOrderHistory" = "取引履歴はありません";
+"NoProducts" = "販売中の商品はありません";
+"LetStartLogin" = "新規登録/ログインして【60日間返品可能】\n【お支払いは90日後】【送料実質無料】の\n新しい仕入れ体験を初めましょう。";
+
+"ApplyDoesNotAllowed" = "卸価格の閲覧はまだ許可されていません";
+"LoginToInput" = "ログインして入力する";      // 取引申込
+"AskInputProfile" = "まずはプロフィール、\n会社の情報を整えましょう";
+"AskInputProfileExplanation" = "ブランドは、あなたのプロフィールを見て\n取引をするか判断します。";
+"RequestSignUp" = "初めてorosyをご利用される方は、アカウントを作成（無料）してご利用ください。";
+"LoginError" = "メールアドレスもしくはパスワードが間違っています。";
+
+"CheckInputData" = "入力内容に不備があります、ご確認下さい";
+"SaveFilure" = "保存できませんでした。再度お試し下さい";
+"PayByPoint" = "ポイント払い";
+
+
+//Retail
+"SMALL" = "1〜3店舗";
+"MEDIUM" = "4〜9店舗";
+"LARGE" = "10〜50店舗";
+"EXTRALARGE" = "50店舗以上";
+
+// Payment
+"PaymentExplanation" = "銀行振込、コンビニ支払い、クレジットカード支払いの多様な支払い方法に加え、お支払いは最大90日後に行うことができます。";
+"90DayPaymentHelp" = "法人クレジットカードや、利用可能枠が大きいカードをご登録いただくことで、90日支払いの利用可能枠は大きくなります";
+"PayNexMonthEndExplanation" = "月末締め翌月末支払いにて、銀行振込またはコンビニでお支払い頂けます。";
+"PointExplanation" = "1ポイントあたり1円でご利用できます。ポイントは支払い時に自動的に全額使用されます。";
+"RefundExplanation" = "返金が発生した際にお支払いする銀行口座を登録できます";
+"CardError" = "入力された上限金額がカード会社から却下され、カードが停止されました。審査を再開するにはカード会社へご連絡ください。";
+"KakeError" = "現在、掛け枠の審査を実施しています。";
+"KakeErrorExplaination" = "審査は最大で3営業日かかる場合がございます。今しばらくお待ち下さい。";
+"CardApply" = "カードを変更して再審査";
+"CardValidationError" = "カード情報が不正です";
+//
+"ConfirmNotSaveReturn" = "このまま画面を閉じると\n編集された内容が消えてしまいます。\n画面を閉じますか？";
+"NotSaved" = "編集内容が保存されていません";
+
+// Company
+"NameSubTitle" = "orosyからご連絡させて頂く際に利用します。";
+
+

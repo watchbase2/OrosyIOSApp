@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ConfirmVC-->
+        <scene sceneID="Mlv-ve-LjU">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmVC" id="Fyt-i5-2Iv" customClass="ConfirmVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXM-el-ckg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-pb-hkS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHI-Ln-h0K" userLabel="Cofirm View" customClass="CustomUIView" customModule="Orosy" customModuleProvider="target">
+                                <rect key="frame" x="15" y="148" width="345" height="443"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13G-Or-2tO" customClass="OrosyUIImageView500" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="22" width="301" height="160.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="13G-Or-2tO" secondAttribute="height" multiplier="300:160" id="IJ9-hG-ChZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf1-xs-dfo" customClass="OrosyLabel20" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="212.5" width="315" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="500" constant="28" id="LwX-RD-H0X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="OrosyGray600"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrU-fw-uSJ" customClass="OrosyLabel14" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="250" width="305" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="OrosyGray600"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-7r-l4u" customClass="OrosyButton" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="306" width="305" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dFn-U0-ENw"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="削除"/>
+                                        <connections>
+                                            <action selector="execRemoveItem:" destination="Fyt-i5-2Iv" eventType="touchUpInside" id="ytc-AQ-vEb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c97-h9-x9q" customClass="OrosyButtonWhite" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="320" width="305" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f2F-Ba-TLj"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="キャンセル">
+                                            <color key="titleColor" name="OrosyBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeConfirmView" destination="Fyt-i5-2Iv" eventType="touchUpInside" id="SI7-68-mW7"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4B-3S-1wW">
+                                        <rect key="frame" x="312" y="15" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="Dzb-D7-lii"/>
+                                            <constraint firstAttribute="height" constant="18" id="Qgd-uJ-UI3"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="close"/>
+                                        <connections>
+                                            <action selector="closeConfirmView" destination="Fyt-i5-2Iv" eventType="touchUpInside" id="UUF-8b-XnF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="13G-Or-2tO" firstAttribute="leading" secondItem="DHI-Ln-h0K" secondAttribute="leading" constant="22" id="1ht-v3-DRH"/>
+                                    <constraint firstAttribute="trailing" secondItem="mf1-xs-dfo" secondAttribute="trailing" constant="15" id="605-oG-FAd"/>
+                                    <constraint firstAttribute="trailing" secondItem="l4B-3S-1wW" secondAttribute="trailing" constant="15" id="AmK-RC-r0j"/>
+                                    <constraint firstItem="lrU-fw-uSJ" firstAttribute="leading" secondItem="DHI-Ln-h0K" secondAttribute="leading" constant="20" id="Aye-g0-39z"/>
+                                    <constraint firstItem="kuz-7r-l4u" firstAttribute="leading" secondItem="DHI-Ln-h0K" secondAttribute="leading" constant="20" id="FK0-eq-tQg"/>
+                                    <constraint firstItem="mf1-xs-dfo" firstAttribute="top" secondItem="13G-Or-2tO" secondAttribute="bottom" priority="900" constant="30" id="FeK-Bf-b1k"/>
+                                    <constraint firstAttribute="trailing" secondItem="lrU-fw-uSJ" secondAttribute="trailing" constant="20" id="G8B-q8-RPp"/>
+                                    <constraint firstAttribute="trailing" secondItem="kuz-7r-l4u" secondAttribute="trailing" constant="20" id="Ltv-ML-bth"/>
+                                    <constraint firstItem="13G-Or-2tO" firstAttribute="top" secondItem="DHI-Ln-h0K" secondAttribute="top" constant="22" id="P6J-Eu-WPV"/>
+                                    <constraint firstItem="l4B-3S-1wW" firstAttribute="top" secondItem="DHI-Ln-h0K" secondAttribute="top" constant="15" id="Yme-kQ-Ybw"/>
+                                    <constraint firstItem="c97-h9-x9q" firstAttribute="leading" secondItem="DHI-Ln-h0K" secondAttribute="leading" constant="20" id="c31-hJ-NdA"/>
+                                    <constraint firstItem="lrU-fw-uSJ" firstAttribute="top" secondItem="mf1-xs-dfo" secondAttribute="bottom" constant="15" id="feI-DB-oc5"/>
+                                    <constraint firstItem="kuz-7r-l4u" firstAttribute="top" secondItem="lrU-fw-uSJ" secondAttribute="bottom" constant="30" id="gEZ-Pd-6dE"/>
+                                    <constraint firstItem="mf1-xs-dfo" firstAttribute="top" secondItem="DHI-Ln-h0K" secondAttribute="top" priority="500" constant="37" id="j1c-7Q-TdS"/>
+                                    <constraint firstAttribute="trailing" secondItem="c97-h9-x9q" secondAttribute="trailing" constant="20" id="kZs-cB-zog"/>
+                                    <constraint firstAttribute="trailing" secondItem="13G-Or-2tO" secondAttribute="trailing" constant="22" id="nnN-xB-leF"/>
+                                    <constraint firstItem="mf1-xs-dfo" firstAttribute="leading" secondItem="DHI-Ln-h0K" secondAttribute="leading" constant="15" id="rC4-P7-QAy"/>
+                                    <constraint firstAttribute="bottom" secondItem="c97-h9-x9q" secondAttribute="bottom" priority="999" constant="37" id="t9G-pl-O3o"/>
+                                    <constraint firstItem="c97-h9-x9q" firstAttribute="top" secondItem="kuz-7r-l4u" secondAttribute="bottom" constant="20" id="vDY-cK-pKq"/>
+                                    <constraint firstAttribute="bottom" secondItem="kuz-7r-l4u" secondAttribute="bottom" priority="500" constant="37" id="yjR-Ki-K3r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uhr-0h-u6U"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DHI-Ln-h0K" firstAttribute="top" secondItem="uhr-0h-u6U" secondAttribute="top" constant="104" id="8xB-Eg-gqd"/>
+                            <constraint firstItem="DHI-Ln-h0K" firstAttribute="leading" secondItem="uhr-0h-u6U" secondAttribute="leading" constant="15" id="Fgy-TL-HlY"/>
+                            <constraint firstItem="uhr-0h-u6U" firstAttribute="trailing" secondItem="DHI-Ln-h0K" secondAttribute="trailing" constant="15" id="LY1-0y-dxu"/>
+                            <constraint firstItem="5ak-pb-hkS" firstAttribute="leading" secondItem="uhr-0h-u6U" secondAttribute="leading" id="OPc-WQ-Cua"/>
+                            <constraint firstItem="5ak-pb-hkS" firstAttribute="top" secondItem="qXM-el-ckg" secondAttribute="top" id="QNm-SR-JI3"/>
+                            <constraint firstItem="uhr-0h-u6U" firstAttribute="bottom" secondItem="5ak-pb-hkS" secondAttribute="bottom" id="eVc-GZ-aMb"/>
+                            <constraint firstItem="uhr-0h-u6U" firstAttribute="trailing" secondItem="5ak-pb-hkS" secondAttribute="trailing" id="oKG-yU-bcs"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="bottomConstraintForMainButton" destination="vDY-cK-pKq" id="lBj-yg-ZZu"/>
+                        <outlet property="topConstraintForTitleLabel" destination="FeK-Bf-b1k" id="XTD-ve-eIb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5W-DR-fi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1222.4637681159422" y="11.71875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="24" height="24"/>
+        <namedColor name="OrosyBlue">
+            <color red="0.0" green="0.14900000393390656" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray600">
+            <color red="0.093999996781349182" green="0.15299999713897705" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

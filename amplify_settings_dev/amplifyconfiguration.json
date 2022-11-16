@@ -1,0 +1,70 @@
+{
+  "UserAgent": "aws-amplify-cli/2.0",
+  "Version": "1.0",
+  "api": {
+    "plugins": {
+      "awsAPIPlugin": {
+        "OrosyAuthAPI": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+          "region": "ap-northeast-1",
+          "authorizationType": "OPENID_CONNECT"
+        },
+        "OrosyUnAuthAPI": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://sle5nqs6jfhifkzxsqrmwkdfcq.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+          "region": "ap-northeast-1",
+          "authorizationType": "API_KEY",
+          "apiKey": "da2-6irp2trzuzg35n5ffkznluoks4"
+        },
+        "UserLogCollector": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://r6yvbrzbt5cxnh26hebqd63e2e.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+          "region": "ap-northeast-1",
+          "authorizationType": "API_KEY",
+          "apiKey": "da2-g4u646yjjfenrb6hsrasgltkua"
+        }
+      }
+    }
+  },
+  "auth": {
+    "plugins": {
+      "awsCognitoAuthPlugin": {
+        "UserAgent": "aws-amplify/cli",
+        "Version": "0.1.0",
+        "IdentityManager": {
+          "Default": {}
+        },
+        "CredentialsProvider": {
+          "CognitoIdentity": {
+            "Default": {
+              "PoolId": "ap-northeast-1:708835ae-f354-45f6-9819-a25d259028ab",
+              "Region": "ap-northeast-1"
+            }
+          }
+        },
+        "CognitoUserPool": {
+          "Default": {
+            "PoolId": "ap-northeast-1_FROjRFgdk",
+            "AppClientId": "9rbfmrrh9ffq3d8jobb4shtua",
+            "AppClientSecret": "1j6irqa03tmesql7dre3445cuqpm3jc8756ghj4lmr3er3293sue",
+            "Region": "ap-northeast-1"
+          }
+        },
+        "Auth": {
+          "Default": {
+            "OAuth": {
+              "WebDomain": "orosysignup-develop.auth.ap-northeast-1.amazoncognito.com",
+              "AppClientId": "9rbfmrrh9ffq3d8jobb4shtua",
+              "AppClientSecret": "1j6irqa03tmesql7dre3445cuqpm3jc8756ghj4lmr3er3293sue",
+              "SignInRedirectURI": "orosy-retailer-ios-app://",
+              "SignOutRedirectURI": "orosy-retailer-ios-app://",
+              "Scopes": ["openid"]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH"
+          }
+        }
+      }
+    }
+  }
+}

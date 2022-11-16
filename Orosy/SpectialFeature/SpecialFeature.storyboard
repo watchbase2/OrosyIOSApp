@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SpecialFeatureVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SpecialFeatureVC" id="Y6W-OH-hqX" userLabel="SpecialFeatureVC" customClass="SpecialFeatureVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-dq-Nh0" userLabel="Product Collection View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="OrosyBackground"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KvU-kd-9w4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="20"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentCell" id="TGv-j3-C2P">
+                                        <rect key="frame" x="20" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x5H-NW-PCr">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0P-UR-m8G" customClass="OrosyUIImageView" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="ACL-IZ-WiI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsU-Dj-5L9" userLabel="BaseView">
+                                                    <rect key="frame" x="0.0" y="94.5" width="128" height="33.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0FX-PI-Zas" userLabel="WhiteBackView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="0.0"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-42-Xyl" userLabel="Content" customClass="OrosyLabel14" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="0.0" width="88" height="0.0"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyGray600"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="記事を読む" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4il-7T-1Uo" customClass="OrosyLabel14" customModule="Orosy" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-7" width="128" height="20.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="OrosyS400"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" tag="10" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH6-Yb-rgO">
+                                                            <rect key="frame" x="20" y="35" width="88" height="34"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <connections>
+                                                                <action selector="showBlogPage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ghx-WW-aFf"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="uH6-Yb-rgO" firstAttribute="bottom" secondItem="4il-7T-1Uo" secondAttribute="bottom" id="0wQ-qw-asV"/>
+                                                        <constraint firstItem="hKe-42-Xyl" firstAttribute="leading" secondItem="gsU-Dj-5L9" secondAttribute="leading" constant="20" id="3UD-Ym-CCy"/>
+                                                        <constraint firstItem="hKe-42-Xyl" firstAttribute="top" secondItem="gsU-Dj-5L9" secondAttribute="top" id="4Nz-Sq-4P2"/>
+                                                        <constraint firstItem="4il-7T-1Uo" firstAttribute="bottom" secondItem="0FX-PI-Zas" secondAttribute="bottom" constant="-15" id="ASA-u0-PvJ"/>
+                                                        <constraint firstItem="4il-7T-1Uo" firstAttribute="leading" secondItem="gsU-Dj-5L9" secondAttribute="leading" id="EKm-XH-IEW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uH6-Yb-rgO" secondAttribute="trailing" constant="20" symbolic="YES" id="J2V-g1-UFo"/>
+                                                        <constraint firstItem="uH6-Yb-rgO" firstAttribute="leading" secondItem="gsU-Dj-5L9" secondAttribute="leading" constant="20" symbolic="YES" id="Nv8-sG-WJB"/>
+                                                        <constraint firstItem="0FX-PI-Zas" firstAttribute="leading" secondItem="gsU-Dj-5L9" secondAttribute="leading" id="P97-AH-39f"/>
+                                                        <constraint firstAttribute="right" secondItem="4il-7T-1Uo" secondAttribute="right" id="Qzq-ys-M0E"/>
+                                                        <constraint firstItem="4il-7T-1Uo" firstAttribute="top" secondItem="hKe-42-Xyl" secondAttribute="bottom" id="ag4-5r-fRb"/>
+                                                        <constraint firstItem="0FX-PI-Zas" firstAttribute="top" secondItem="gsU-Dj-5L9" secondAttribute="top" id="hD0-eh-gov"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hKe-42-Xyl" secondAttribute="trailing" constant="20" id="iqk-ll-slF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4il-7T-1Uo" secondAttribute="bottom" constant="20" id="sKV-Qm-tyO"/>
+                                                        <constraint firstItem="4il-7T-1Uo" firstAttribute="top" secondItem="uH6-Yb-rgO" secondAttribute="top" id="sNo-G3-sM4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0FX-PI-Zas" secondAttribute="trailing" id="syg-7o-xUJ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Q0P-UR-m8G" firstAttribute="leading" secondItem="x5H-NW-PCr" secondAttribute="leading" id="5Hl-90-WPl"/>
+                                                <constraint firstItem="gsU-Dj-5L9" firstAttribute="leading" secondItem="x5H-NW-PCr" secondAttribute="leading" id="NnG-3G-XIk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q0P-UR-m8G" secondAttribute="trailing" id="O7c-p6-6BU"/>
+                                                <constraint firstItem="gsU-Dj-5L9" firstAttribute="top" secondItem="Q0P-UR-m8G" secondAttribute="bottom" id="OoT-Fc-2GP"/>
+                                                <constraint firstAttribute="bottom" secondItem="gsU-Dj-5L9" secondAttribute="bottom" id="aiP-jE-Bks"/>
+                                                <constraint firstItem="Q0P-UR-m8G" firstAttribute="top" secondItem="x5H-NW-PCr" secondAttribute="top" constant="-10" id="sLe-y8-r2p"/>
+                                                <constraint firstAttribute="trailing" secondItem="gsU-Dj-5L9" secondAttribute="trailing" id="w2j-vy-idH"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="OrosyBackground"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uPa-2C-iZI">
+                                    <rect key="frame" x="0.0" y="128" width="414" height="20"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yNp-dq-Nh0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RDW-MY-Gkj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yNp-dq-Nh0" secondAttribute="trailing" id="jnB-us-6wT"/>
+                            <constraint firstItem="yNp-dq-Nh0" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="l92-xB-rQu"/>
+                            <constraint firstItem="yNp-dq-Nh0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qtf-h5-JJe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="iMB-Lx-Mey"/>
+                    <connections>
+                        <outlet property="ContentCollectionView" destination="yNp-dq-Nh0" id="Jro-bU-1jz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.15942028985509" y="-70.3125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="OrosyBackground">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray600">
+            <color red="0.093999996781349182" green="0.15299999713897705" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyS400">
+            <color red="0.0" green="0.14900000393390656" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RetailerInfoVC-->
+        <scene sceneID="XA1-DU-scL">
+            <objects>
+                <viewController storyboardIdentifier="RetailerInfoVC" id="Bee-i2-br7" userLabel="RetailerInfoVC" customClass="RetailerInfoVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMz-bo-j9G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-kH-4gF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NORMAL_CELL" rowHeight="78" id="v9G-Be-gRT">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v9G-Be-gRT" id="W99-ma-OcX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iue-bC-XCB" customClass="OrosyTextFieldLabel" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="78"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="68" id="Tvr-eE-ien"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Bee-i2-br7" id="eyc-ed-jpn"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="iue-bC-XCB" firstAttribute="leading" secondItem="W99-ma-OcX" secondAttribute="leading" constant="20" id="2hP-ne-U14"/>
+                                                <constraint firstItem="iue-bC-XCB" firstAttribute="trailing" secondItem="W99-ma-OcX" secondAttribute="trailing" constant="-20" id="DyT-A5-vDJ"/>
+                                                <constraint firstItem="iue-bC-XCB" firstAttribute="top" secondItem="W99-ma-OcX" secondAttribute="topMargin" id="a9u-NB-8ft"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="iue-bC-XCB" secondAttribute="bottom" id="kOl-bO-BMy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LIST_BOX_CELL" id="IkV-2d-xXG">
+                                        <rect key="frame" x="0.0" y="122.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IkV-2d-xXG" id="Pv6-ZD-Ov0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bII-JW-LCO" customClass="OrosyMenuButtonWithLabel" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="68"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="68" id="LVA-T6-TDq"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="withLabel" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="bII-JW-LCO" secondAttribute="bottom" constant="20" id="MgF-1V-1vt"/>
+                                                <constraint firstAttribute="trailing" secondItem="bII-JW-LCO" secondAttribute="trailing" constant="20" id="cVK-DS-tdF"/>
+                                                <constraint firstItem="bII-JW-LCO" firstAttribute="leading" secondItem="Pv6-ZD-Ov0" secondAttribute="leading" constant="20" id="wZo-bB-JmV"/>
+                                                <constraint firstItem="bII-JW-LCO" firstAttribute="top" secondItem="Pv6-ZD-Ov0" secondAttribute="top" id="yYC-k1-0gF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Bee-i2-br7" id="ckt-xJ-mp4"/>
+                                    <outlet property="delegate" destination="Bee-i2-br7" id="sM8-bf-9Di"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fHs-oX-AYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTg-kH-4gF" firstAttribute="top" secondItem="fHs-oX-AYf" secondAttribute="top" id="90j-fN-ZFq"/>
+                            <constraint firstItem="vTg-kH-4gF" firstAttribute="bottom" secondItem="fHs-oX-AYf" secondAttribute="bottom" id="MnO-ly-Tvr"/>
+                            <constraint firstItem="vTg-kH-4gF" firstAttribute="trailing" secondItem="fHs-oX-AYf" secondAttribute="trailing" id="X7z-EY-YFV"/>
+                            <constraint firstItem="vTg-kH-4gF" firstAttribute="leading" secondItem="fHs-oX-AYf" secondAttribute="leading" id="m0j-pC-ZaG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainTableView" destination="vTg-kH-4gF" id="bZI-xS-lMz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YI-Ho-dmP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349.27536231884062" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

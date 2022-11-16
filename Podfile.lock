@@ -1,0 +1,131 @@
+PODS:
+  - Amplify (1.28.1):
+    - Amplify/Default (= 1.28.1)
+  - Amplify/Default (1.28.1)
+  - Amplify/Tools (1.28.1)
+  - AmplifyPlugins/AWSAPIPlugin (1.28.1):
+    - AppSyncRealTimeClient (~> 2.0)
+    - AWSCore (~> 2.28.0)
+    - AWSPluginsCore (= 1.28.1)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (1.28.1):
+    - AWSAuthCore (~> 2.28.0)
+    - AWSCognitoIdentityProvider (~> 2.28.0)
+    - AWSCognitoIdentityProviderASF (~> 2.28.0)
+    - AWSCore (~> 2.28.0)
+    - AWSMobileClient (~> 2.28.0)
+    - AWSPluginsCore (= 1.28.1)
+  - AppSyncRealTimeClient (2.1.1):
+    - Starscream (~> 4.0.4)
+  - AWSAuthCore (2.28.0):
+    - AWSCore (= 2.28.0)
+  - AWSCognitoIdentityProvider (2.28.0):
+    - AWSCognitoIdentityProviderASF (= 2.28.0)
+    - AWSCore (= 2.28.0)
+  - AWSCognitoIdentityProviderASF (2.28.0):
+    - AWSCore (= 2.28.0)
+  - AWSCore (2.28.0)
+  - AWSMobileClient (2.28.0):
+    - AWSAuthCore (= 2.28.0)
+    - AWSCognitoIdentityProvider (= 2.28.0)
+    - AWSCognitoIdentityProviderASF (= 2.28.0)
+    - AWSCore (= 2.28.0)
+  - AWSPluginsCore (1.28.1):
+    - Amplify (= 1.28.1)
+    - AWSCore (~> 2.28.0)
+  - Bolts (1.9.1):
+    - Bolts/AppLinks (= 1.9.1)
+    - Bolts/Tasks (= 1.9.1)
+  - Bolts/AppLinks (1.9.1):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.1)
+  - Facebook-iOS-SDK (4.38.0):
+    - Bolts (~> 1.9)
+    - Facebook-iOS-SDK/CoreKit (= 4.38.0)
+    - Facebook-iOS-SDK/MarketingKit (= 4.38.0)
+  - Facebook-iOS-SDK/CoreKit (4.38.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit
+  - Facebook-iOS-SDK/MarketingKit (4.38.0):
+    - Bolts (~> 1.9)
+    - Facebook-iOS-SDK/CoreKit
+    - FBSDKMarketingKit
+  - FBSDKCoreKit (7.0.1):
+    - FBSDKCoreKit/Basics (= 7.0.1)
+    - FBSDKCoreKit/Core (= 7.0.1)
+  - FBSDKCoreKit/Basics (7.0.1)
+  - FBSDKCoreKit/Core (7.0.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKMarketingKit (7.0.0):
+    - FBSDKCoreKit (~> 7.0.0)
+  - Kingfisher (7.4.0)
+  - Starscream (4.0.4)
+  - Stripe (22.8.4):
+    - Stripe/Stripe3DS2 (= 22.8.4)
+    - StripeApplePay (= 22.8.4)
+    - StripeCore (= 22.8.4)
+    - StripeUICore (= 22.8.4)
+  - Stripe/Stripe3DS2 (22.8.4):
+    - StripeApplePay (= 22.8.4)
+    - StripeCore (= 22.8.4)
+    - StripeUICore (= 22.8.4)
+  - StripeApplePay (22.8.4):
+    - StripeCore (= 22.8.4)
+  - StripeCore (22.8.4)
+  - StripeUICore (22.8.4):
+    - StripeCore (= 22.8.4)
+
+DEPENDENCIES:
+  - Amplify (~> 1.0)
+  - Amplify/Tools (~> 1.0)
+  - AmplifyPlugins/AWSAPIPlugin (~> 1.0)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (~> 1.0)
+  - Facebook-iOS-SDK
+  - Kingfisher
+  - Stripe
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Amplify
+    - AmplifyPlugins
+    - AppSyncRealTimeClient
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPluginsCore
+    - Bolts
+    - Facebook-iOS-SDK
+    - FBSDKCoreKit
+    - FBSDKMarketingKit
+    - Kingfisher
+    - Starscream
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeUICore
+
+SPEC CHECKSUMS:
+  Amplify: 050d2daf2c5754eab171606fa3e35619c4babf6e
+  AmplifyPlugins: 55b7fe0fe9a4788b0602b9e65601a832b814a96a
+  AppSyncRealTimeClient: 937360221f2b664c4c33ae142a60643e64f480cd
+  AWSAuthCore: 658c331fe5cbc58608ced499aa0d8d46c57e9c96
+  AWSCognitoIdentityProvider: 9778edc430206a1bf67ff5f0c7a7b130fa4a5380
+  AWSCognitoIdentityProviderASF: a82f81ad75fce6d8c826ed394fa3cf7c51306897
+  AWSCore: 0ebe9ba8a459893cdf268ce0bae61875efd0182b
+  AWSMobileClient: 8d466f135e8d851a76e57cbfe65bb67eb522b64c
+  AWSPluginsCore: a12e315533b041485d722bdb394bf150ad9cc78e
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  Facebook-iOS-SDK: 9077b67c4178ea46c62997bcf2b6314ca6555440
+  FBSDKCoreKit: 9cc05bec0568a5955c82eb59ae95da0fe125b88d
+  FBSDKMarketingKit: 3d5736f9bbfcf7deae1e236f746712c2b6730ae5
+  Kingfisher: 596b207973051aae5e4c54a1c1cb39837ea10d36
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  Stripe: 59f6659e8ea413def19c97c57e23f5ec6ea48cf8
+  StripeApplePay: 6e9aebd3d248464836e9fbdaef6e5fb1817d56a6
+  StripeCore: 193f27552fb98108ebfe0df11651fe5f38948305
+  StripeUICore: 6a5bbea0164d63bd91000f001903e7901859e1a4
+
+PODFILE CHECKSUM: 572cecc6d2339bd29cc220c0797f22ef1db4c029
+
+COCOAPODS: 1.11.3

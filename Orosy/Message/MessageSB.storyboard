@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MessageVC-->
+        <scene sceneID="Aya-25-xpt">
+            <objects>
+                <viewController storyboardIdentifier="MessageVC" id="Q6a-db-hRy" userLabel="MessageVC" customClass="MessageVC" customModule="Orosy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CsJ-au-dFt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOs-37-wah" userLabel="Template Label">
+                                <rect key="frame" x="188.5" y="446" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-7r-L27">
+                                <rect key="frame" x="0.0" y="48" width="414" height="765"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="Oqe-e7-AhI">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oqe-e7-AhI" id="iDL-dp-FIB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTh-TQ-0vK" userLabel="Left Float Image">
+                                                    <rect key="frame" x="25" y="0.0" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmg-JT-Ow2" userLabel=" Left message">
+                                                    <rect key="frame" x="20" y="11" width="37.5" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5F-Mi-tJD" userLabel="LeftImage View" customClass="OrosyUIImageView" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="25" y="10" width="160" height="160"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05m-t8-ZA6" userLabel="LeftButton" customClass="IndexedButton" customModule="Orosy" customModuleProvider="target">
+                                                    <rect key="frame" x="25" y="10" width="150" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsC-Ux-Yt8" userLabel="Left Date">
+                                                    <rect key="frame" x="10" y="14" width="80" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" name="OrosyGray400"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q6a-db-hRy" id="bCo-7e-eRP"/>
+                                    <outlet property="delegate" destination="Q6a-db-hRy" id="oFi-BD-1JH"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEX-cV-gYa" userLabel="Massage Input View">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50W-fd-XTN" userLabel="Photo Button">
+                                        <rect key="frame" x="20" y="7" width="34" height="34"/>
+                                        <color key="backgroundColor" name="OrosyS100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="JxQ-Iy-3gM"/>
+                                            <constraint firstAttribute="width" constant="34" id="Ude-wq-cgu"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=" " image="image"/>
+                                        <connections>
+                                            <action selector="photoSelectButtonPushed" destination="Q6a-db-hRy" eventType="touchUpInside" id="lwB-7T-koI"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-c2-aFS" userLabel="Message Input Field">
+                                        <rect key="frame" x="68" y="8" width="252" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Q6a-db-hRy" id="mdZ-th-vve"/>
+                                        </connections>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXT-dg-kFk" userLabel="Send Button">
+                                        <rect key="frame" x="360" y="7" width="34" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="AmM-gG-s1X"/>
+                                            <constraint firstAttribute="height" constant="34" id="Lsv-bQ-j95"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=" " image="send"/>
+                                        <state key="highlighted" image="--"/>
+                                        <connections>
+                                            <action selector="sendMessageButtonPushed" destination="Q6a-db-hRy" eventType="touchUpInside" id="dFb-Ty-Jg3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="OrosyBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="50W-fd-XTN" secondAttribute="bottom" constant="8" id="1j5-Tu-N7x"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZXT-dg-kFk" secondAttribute="trailing" constant="20" id="3NQ-Pp-ZTi"/>
+                                    <constraint firstItem="5JS-c2-aFS" firstAttribute="top" secondItem="zEX-cV-gYa" secondAttribute="top" constant="8" id="Qjz-yK-53d"/>
+                                    <constraint firstAttribute="trailing" secondItem="5JS-c2-aFS" secondAttribute="trailing" constant="94" id="R0Y-sC-0o2"/>
+                                    <constraint firstAttribute="bottom" secondItem="5JS-c2-aFS" secondAttribute="bottom" constant="8" id="U3j-FV-r5u"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZXT-dg-kFk" secondAttribute="bottom" constant="8" id="V08-sf-vB0"/>
+                                    <constraint firstItem="5JS-c2-aFS" firstAttribute="leading" secondItem="50W-fd-XTN" secondAttribute="trailing" constant="14" id="ita-WS-c9w"/>
+                                    <constraint firstItem="50W-fd-XTN" firstAttribute="leading" secondItem="zEX-cV-gYa" secondAttribute="leading" constant="20" id="sl6-Iw-0Ws"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0T-h0-Fbg">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omN-dd-ixA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="743"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQn-6h-q2X" customClass="CustomButton" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="274" y="763" width="100" height="31"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="Xg7-ET-G5z"/>
+                                            <constraint firstAttribute="width" constant="100" id="cGY-0z-T9t"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="送信">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="AccentColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sendImage" destination="Q6a-db-hRy" eventType="touchUpInside" id="efT-bl-5ED"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oz9-5S-Bhe" customClass="CustomButton" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="145" y="763" width="124" height="31"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="124" id="U0J-NE-y05"/>
+                                            <constraint firstAttribute="height" constant="31" id="X7P-sF-gcx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="閉じる">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="HiraginoSans-W3"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="closeImageViewWithAnimation:" destination="Q6a-db-hRy" eventType="touchUpInside" id="5H6-Rm-zP7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-I5-M9l" customClass="CustomButton" customModule="Orosy" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="763" width="124" height="31"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="124" id="PVX-wB-f5r"/>
+                                            <constraint firstAttribute="height" constant="31" id="g5i-il-UOf"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="キャンセル">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="HiraginoSans-W3"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sendCancel" destination="Q6a-db-hRy" eventType="touchUpInside" id="1yO-oD-X0Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oz9-5S-Bhe" firstAttribute="centerX" secondItem="D0T-h0-Fbg" secondAttribute="centerX" id="05E-Ng-p4y"/>
+                                    <constraint firstItem="Ilh-I5-M9l" firstAttribute="leading" secondItem="D0T-h0-Fbg" secondAttribute="leading" constant="40" id="95o-9r-srH"/>
+                                    <constraint firstItem="oz9-5S-Bhe" firstAttribute="top" secondItem="omN-dd-ixA" secondAttribute="bottom" constant="20" id="Bbq-Tf-R7h"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ilh-I5-M9l" secondAttribute="bottom" constant="20" id="Imb-KX-xKc"/>
+                                    <constraint firstAttribute="bottom" secondItem="KQn-6h-q2X" secondAttribute="bottom" constant="20" id="MOf-oX-o3y"/>
+                                    <constraint firstItem="omN-dd-ixA" firstAttribute="top" secondItem="D0T-h0-Fbg" secondAttribute="top" id="Sge-Vl-vG1"/>
+                                    <constraint firstAttribute="trailing" secondItem="omN-dd-ixA" secondAttribute="trailing" id="kvm-yb-RfN"/>
+                                    <constraint firstAttribute="bottom" secondItem="oz9-5S-Bhe" secondAttribute="bottom" constant="20" id="mzN-Wf-ghM"/>
+                                    <constraint firstItem="omN-dd-ixA" firstAttribute="leading" secondItem="D0T-h0-Fbg" secondAttribute="leading" id="qmk-MQ-x1I"/>
+                                    <constraint firstAttribute="trailing" secondItem="KQn-6h-q2X" secondAttribute="trailing" constant="40" id="y8K-Qu-N0Z"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyk-yl-lJq" customClass="OrosyUIImageView400" customModule="Orosy" customModuleProvider="target">
+                                <rect key="frame" x="-3" y="79" width="413" height="732"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-gD-X88">
+                                <rect key="frame" x="5" y="53" width="45" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="jrp-Cb-TsE"/>
+                                    <constraint firstAttribute="height" constant="35" id="tmd-Kb-mPg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeModalView" destination="Q6a-db-hRy" eventType="touchUpInside" id="qJy-Kv-NTJ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytK-p9-rCy" customClass="OrosyLabel16B" customModule="Orosy" customModuleProvider="target">
+                                <rect key="frame" x="60" y="60" width="294" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="BqD-Ym-pk0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="OrosyGray400"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-wH-715">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" name="OrosyBlue"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Go-eu-Yr7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="RuL-wH-715" firstAttribute="centerX" secondItem="8Go-eu-Yr7" secondAttribute="centerX" id="2RX-6t-nw7"/>
+                            <constraint firstItem="8Go-eu-Yr7" firstAttribute="bottom" secondItem="D0T-h0-Fbg" secondAttribute="bottom" id="3GE-EM-emt"/>
+                            <constraint firstItem="YoU-gD-X88" firstAttribute="top" secondItem="8Go-eu-Yr7" secondAttribute="top" constant="5" id="3gR-S5-gli"/>
+                            <constraint firstItem="zEX-cV-gYa" firstAttribute="top" secondItem="j5K-7r-L27" secondAttribute="bottom" id="5YZ-gu-huR"/>
+                            <constraint firstItem="ytK-p9-rCy" firstAttribute="top" secondItem="8Go-eu-Yr7" secondAttribute="top" constant="12" id="6IZ-73-Hp4"/>
+                            <constraint firstItem="j5K-7r-L27" firstAttribute="leading" secondItem="8Go-eu-Yr7" secondAttribute="leading" id="6Vc-4d-8eD"/>
+                            <constraint firstItem="D0T-h0-Fbg" firstAttribute="leading" secondItem="8Go-eu-Yr7" secondAttribute="leading" id="8d2-Ex-GyK"/>
+                            <constraint firstItem="D0T-h0-Fbg" firstAttribute="trailing" secondItem="8Go-eu-Yr7" secondAttribute="trailing" id="LrL-hm-qKg"/>
+                            <constraint firstItem="YoU-gD-X88" firstAttribute="leading" secondItem="8Go-eu-Yr7" secondAttribute="leading" constant="5" id="QvC-9g-GeK"/>
+                            <constraint firstItem="zEX-cV-gYa" firstAttribute="leading" secondItem="8Go-eu-Yr7" secondAttribute="leading" id="US8-L9-kgZ"/>
+                            <constraint firstItem="D0T-h0-Fbg" firstAttribute="top" secondItem="8Go-eu-Yr7" secondAttribute="top" id="VEo-3C-bT1"/>
+                            <constraint firstItem="RuL-wH-715" firstAttribute="centerY" secondItem="CsJ-au-dFt" secondAttribute="centerY" id="WZm-Ka-WQS"/>
+                            <constraint firstItem="8Go-eu-Yr7" firstAttribute="trailing" secondItem="ytK-p9-rCy" secondAttribute="trailing" constant="60" id="WuK-L0-Q8I"/>
+                            <constraint firstItem="8Go-eu-Yr7" firstAttribute="bottom" secondItem="zEX-cV-gYa" secondAttribute="bottom" id="Yk3-lX-O0D"/>
+                            <constraint firstItem="D0T-h0-Fbg" firstAttribute="centerX" secondItem="hOs-37-wah" secondAttribute="centerX" id="eBa-bl-aLw"/>
+                            <constraint firstItem="zEX-cV-gYa" firstAttribute="trailing" secondItem="8Go-eu-Yr7" secondAttribute="trailing" id="eFf-tH-XGa"/>
+                            <constraint firstItem="j5K-7r-L27" firstAttribute="trailing" secondItem="8Go-eu-Yr7" secondAttribute="trailing" id="jMY-jp-s3k"/>
+                            <constraint firstItem="j5K-7r-L27" firstAttribute="top" secondItem="8Go-eu-Yr7" secondAttribute="top" id="joY-UH-fXT"/>
+                            <constraint firstItem="ytK-p9-rCy" firstAttribute="leading" secondItem="8Go-eu-Yr7" secondAttribute="leading" constant="60" id="kmv-2p-wHs"/>
+                            <constraint firstItem="D0T-h0-Fbg" firstAttribute="centerY" secondItem="hOs-37-wah" secondAttribute="centerY" id="rBZ-xY-S1n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="G8q-Ui-nzN">
+                        <barButtonItem key="leftBarButtonItem" id="V8d-Vp-zyh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="KeyboadInputView" destination="zEX-cV-gYa" id="fRQ-wp-L0t"/>
+                        <outlet property="MainTableView" destination="j5K-7r-L27" id="hHs-go-sUr"/>
+                        <outlet property="cancelPhotoButton" destination="Ilh-I5-M9l" id="wvl-6Y-F4I"/>
+                        <outlet property="closeButton" destination="YoU-gD-X88" id="bva-As-DH1"/>
+                        <outlet property="imagePreView" destination="cyk-yl-lJq" id="VSe-ir-yMY"/>
+                        <outlet property="imagePreviewView" destination="D0T-h0-Fbg" id="Hhy-6n-6Is"/>
+                        <outlet property="mainTableBottomConstraint" destination="5YZ-gu-huR" id="763-rs-zzY"/>
+                        <outlet property="mainTableTopConstraint" destination="joY-UH-fXT" id="E6L-cf-BKo"/>
+                        <outlet property="messageInputView" destination="5JS-c2-aFS" id="fhr-Hc-hSm"/>
+                        <outlet property="messageInputViewBottomConstraint" destination="Yk3-lX-O0D" id="MiE-VT-Mlg"/>
+                        <outlet property="modaiTitleLabel" destination="ytK-p9-rCy" id="30y-o6-f0C"/>
+                        <outlet property="photoButton" destination="50W-fd-XTN" id="Heh-gE-2nV"/>
+                        <outlet property="sendButton" destination="ZXT-dg-kFk" id="VKp-qt-UU2"/>
+                        <outlet property="sendPhotoButton" destination="KQn-6h-q2X" id="rif-zt-Ah9"/>
+                        <outlet property="templateLabel" destination="hOs-37-wah" id="Daj-tw-AKC"/>
+                        <outlet property="waitIndicator" destination="RuL-wH-715" id="cod-3s-mR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBr-RS-shx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="310.79460269865069"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Ilh-I5-M9l">
+            <size key="intrinsicContentSize" width="65" height="25"/>
+        </designable>
+        <designable name="KQn-6h-q2X">
+            <size key="intrinsicContentSize" width="59" height="34.5"/>
+        </designable>
+        <designable name="oz9-5S-Bhe">
+            <size key="intrinsicContentSize" width="63" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="--" width="128" height="128"/>
+        <image name="close" width="24" height="24"/>
+        <image name="image" width="34" height="34"/>
+        <image name="send" width="34" height="34"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyBackground">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyBlue">
+            <color red="0.0" green="0.14900000393390656" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyGray400">
+            <color red="0.58399999141693115" green="0.62400001287460327" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrosyS100">
+            <color red="0.87800002098083496" green="0.89800000190734863" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

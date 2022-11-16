@@ -1,0 +1,63 @@
+{
+  "UserAgent": "aws-amplify-cli/2.0",
+  "Version": "1.0",
+  "api": {
+    "plugins": {
+      "awsAPIPlugin": {
+        "OrosyAuthAPI": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://emrd2xskb5g2halwbx3kfrx5qm.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+          "region": "ap-northeast-1",
+          "authorizationType": "OPENID_CONNECT"
+        },
+        "OrosyUnAuthAPI": {
+          "endpointType": "GraphQL",
+          "endpoint": "https://emrd2xskb5g2halwbx3kfrx5qm.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+          "region": "ap-northeast-1",
+          "authorizationType": "API_KEY",
+          "apiKey": "da2-xz6bgytkpndwti2zpzfnbnepy4"
+        }
+      }
+    }
+  },
+  "auth": {
+    "plugins": {
+      "awsCognitoAuthPlugin": {
+        "UserAgent": "aws-amplify/cli",
+        "Version": "0.1.0",
+        "IdentityManager": {
+          "Default": {}
+        },
+        "CredentialsProvider": {
+          "CognitoIdentity": {
+            "Default": {
+              "PoolId": "ap-northeast-1:6fee1187-dc8d-440c-811b-e30797f8c2dc",
+              "Region": "ap-northeast-1"
+            }
+          }
+        },
+        "CognitoUserPool": {
+          "Default": {
+            "PoolId": "ap-northeast-1_AmEqFa8eB",
+            "AppClientId": "25hgskj213olhr4qvk456237bd",
+            "AppClientSecret": "1tvpeqjkueine7b14jp0k9gdk3bc7gm1mggf95f4oqacompoeh5s",
+            "Region": "ap-northeast-1"
+          }
+        },
+        "Auth": {
+          "Default": {
+            "OAuth": {
+              "WebDomain": "orosysignup-develop.auth.ap-northeast-1.amazoncognito.com",
+              "AppClientId": "25hgskj213olhr4qvk456237bd",
+              "AppClientSecret": "1tvpeqjkueine7b14jp0k9gdk3bc7gm1mggf95f4oqacompoeh5s",
+              "SignInRedirectURI": "orosy-retailer-ios-app://",
+              "SignOutRedirectURI": "orosy-retailer-ios-app://",
+              "Scopes": ["openid"]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH"
+          }
+        }
+      }
+    }
+  }
+}
